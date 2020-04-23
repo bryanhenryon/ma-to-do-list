@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/83aead147a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ma To-Do List</h1>
+    </header>
+
+    <div class="container">
+      <div id="error"></div>
+      <form id="form">
+        <input type="text" id="taskInput" autocomplete="off" />
+        <button type="submit" id="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+
+        <div id="dropdown">
+          <button id="dropdown-btn">
+            <span>Toutes</span>
+            <i class="fas fa-caret-down" id="dropdown-icon"></i>
+          </button>
+          <ul id="dropdown-menu">
+            <li>Toutes</li>
+            <li>Complétées</li>
+            <li>En cours</li>
+          </ul>
+        </div>
+      </form>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Filtrer les tâches"
+        autocomplete="off"
+      />
+      <ul id="tasks"></ul>
+      <button id="clear">Tout effacer</button>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
