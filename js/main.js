@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", getTasksFromLocalStorage);
 clear.addEventListener("click", clearTasks);
 searchInput.addEventListener("keyup", searchTask);
 
-footer.innerHTML = `&copy ${new Date().getFullYear()} Bryan Henryon — <a href="https://youtu.be/1VuMdLm0ccU" target="_blank"> www.bryanhenryon.fr</a>`;
+footer.innerHTML = `&copy ${new Date().getFullYear()} Bryan Henryon — <a href="https://www.bryanhenryon.fr/" target="_blank"> www.bryanhenryon.fr</a>`;
 
 function toggleDropdown(e) {
   dropdownMenu.classList.toggle("active");
